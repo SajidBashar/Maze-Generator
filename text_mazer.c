@@ -85,7 +85,7 @@ void print_grid(int rows, int cols, char *grid) {
 }
 
 void generate_maze(int rows, int cols, char *grid) {
-  printf("%d x %d Maze:\n", rows, cols);
+  printf("%d x %d MAZE:\n", cols, rows);
   grid_init(rows, cols, grid); 
   dfs(1, 1, grid, rows, cols); 
   print_grid(rows, cols, grid);
@@ -99,4 +99,3 @@ int main(void) {
   generate_maze(rows, cols, grid);
   free(grid); 
 }
-
